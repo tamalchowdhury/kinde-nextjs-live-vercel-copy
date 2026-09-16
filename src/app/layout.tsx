@@ -49,14 +49,14 @@ export default async function RootLayout({
                       <div className="avatar">
                         {user?.given_name?.[0]}
                         {user?.family_name?.[0]}
-                      <div>
-                        <PortalLink>Go to account portal</PortalLink>
-                      </div>
                       </div>
                     )}
                     <div>
                       <p className="text-heading-2">
                         {user?.given_name} {user?.family_name}
+                        <div>
+                        <PortalLink>Go to account portal</PortalLink>
+                      </div>
                       </p>
 
                       <LogoutLink className="text-subtle">Log out</LogoutLink>
