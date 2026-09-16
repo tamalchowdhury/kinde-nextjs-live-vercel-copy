@@ -3,6 +3,7 @@ import {
   RegisterLink,
   LoginLink,
   LogoutLink,
+  PortalLink,
 } from "@kinde-oss/kinde-auth-nextjs/components";
 import { getKindeServerSession } from "@kinde-oss/kinde-auth-nextjs/server";
 import { KindeProvider } from "@kinde-oss/kinde-auth-nextjs";
@@ -48,6 +49,9 @@ export default async function RootLayout({
                       <div className="avatar">
                         {user?.given_name?.[0]}
                         {user?.family_name?.[0]}
+                      <div>
+                        <PortalLink>Go to account portal</PortalLink>
+                      </div>
                       </div>
                     )}
                     <div>
